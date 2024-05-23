@@ -1,0 +1,782 @@
+/* #F3efde; LINEN
+#e3b055; BUMBLEBEE
+#dbddb6; MATCHA
+#fff1c1; SUNSHINE
+#83a69c; SEASPRAY
+#cbdfd8; BABY BLUE
+ */
+ /* 
+ @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+   background: linear-gradient(135deg, #8E7AB5, #B784B7, #E493B3, #EEA5A6);
+  background-size: 400% 400%;
+  animation: gradientBG 5s ease infinite;
+
+  */
+  
+ body {
+    background: linear-gradient(to bottom, #6096B4,
+    #93BFCF,
+    #BDCDD6,
+    #EEE9DA);
+    background-position: center; /* Centrera bakgrundsbilden */
+    background-size: 100%; /* Se till att bakgrundsbilden täcker hela body-elementet */
+    background-attachment: fixed; /* Gör bakgrundsbilden fast */
+    margin: 0; /* Eliminerar standardmarginaler för body-elementet */
+    overflow:auto; /* Lägg till scrollbar vid behov */
+    display: flex; /* Gör body till en flex-container */
+    flex-direction: column; /* Lägg till flex-direction: column för att placera element i en kolumn */
+    height: 100%; /* Sätter höjden på sidan till 100% av vyhöjden */
+    color: #d5c1dd;
+}
+.sidenav a {
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    padding: 20px;
+    color: #000000;
+}
+.sidenav a:hover {
+    color: #91d8e7;
+}
+.sidenav a.current-page {
+    color: #91d8e7;
+}
+.sidenav { 
+    padding: 20px;
+}
+.nameimage {
+   margin: 0 auto;
+    width: 50%;
+    margin-top: 160px;
+    margin-bottom: 200px;
+}
+#cl {
+    background-color: white;
+    background-image: none;
+  }
+  #klarna {
+    background-color: white;
+    background-image: none;
+  }
+#case {
+    background-color: #d5c1dd; /* Fallback-färg om linjär gradient inte stöds */
+    background-image:  url('sleep.png'); /* Linjär gradient från botten till toppen */
+    background-size: cover; /* Se till att bakgrundsbilden täcker hela body-elementet */
+    background-position: center; /* Centrera bakgrundsbilden */
+    background-attachment: fixed; /* Gör bakgrundsbilden fast */
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+}
+#case p, ul li {
+   font-size: 18px;
+}
+hr {
+    border: 1px solid; /* Ta bort standard ram */
+    background-color: #000000; /* Svart färg */
+    margin: 50px 0; /* Marginal över och under linjen */
+}
+.somna {
+    width: 200px;
+}
+.image-containercase {
+    display: flex; /* Använd flexbox för att ordna bilderna horisontellt */
+    justify-content: center; /* Centrera innehållet horisontellt */
+    width: 100%;
+}
+.content1 {
+    flex: 1;
+}
+.casebild img {
+    height: 500px;
+    padding: 10px;
+}
+.casebild1 img {
+    max-width: 200px; /* Ange en maxbredd för bilderna */
+    margin-right: 20px; /* Lägg till marginal till höger om bilderna */
+}
+
+.section-case1 {
+    background-color: #C6BAE0;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.187);
+    margin-bottom: 30px;
+    color: #000000;
+    display: flex; /* Använd flexbox för att ordna bilderna och texten horisontellt */
+    justify-content: center; /* Centrera innehållet horisontellt */
+    align-items: center; /* Centrera innehållet vertikalt */
+    flex-wrap: wrap; /* Tillåt innehållet att flöda över flera rader */
+}
+  .casestudy {
+    color: #ffffff;
+    display: flex; /* Använd flexbox för att placera element bredvid varandra */
+    flex-direction: column; /* Ställ in flexbox-layouten till att vara en kolumn */
+    align-items: center; /* Centrera innehållet horisontellt */
+    text-align: center; /* Centrera texten horisontellt */
+}
+
+#designthinking {
+    text-align: center;
+}
+.section-case {
+    background-color: #C6BAE0;
+    padding: 40px;
+    color: #000000;
+    border-radius: 15px;
+    box-shadow: 0 5px 7px rgba(50, 0, 63, 0.444);
+    margin-bottom: 30px;
+}
+
+.section-case h2 {
+    color: #000000;
+    font-size: 28px;
+}
+
+.section-case h3 {
+    color: #000000;
+    font-size: 24px;
+}
+.section-case h3 i {
+    color: #000000;
+    font-size: 30px;
+}
+.section-case h4 {
+    color: #000000;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+  
+/* Navigation styling */
+.header {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+    
+}
+.logoname a {
+    padding: 10px;
+    z-index: 1;
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: 24px;
+    text-decoration: none; /* Tar bort standard understrykning för länkar */
+}
+.logoname h1,
+.logoname p {
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    color: #000000;
+    display: inline-block; /* Placera bredvid varandra */
+}
+/* Om mig sidan */
+#penruler {
+    transition: .9s;
+}
+#penruler:hover {
+    color:#ee00ff;
+    font-size: larger;
+}
+#facelaugh {
+    transition: .9s;
+}
+#facelaugh:hover {
+    color:#f2dcef;
+    font-size: larger;
+}
+#ux-design {
+    /* Din vanliga stil för #ux-design här */
+    font-style: normal; /* För att se till att texten inte är kursiv när den inte är i hover-läge */
+    transition: .9s; /* Lägger till en övergångseffekt för smidig förändring av storlek och textstil */
+  }
+  
+  #ux-design:hover {
+    /* Stilförändringar när muspekaren sveps över #ux-design */
+    color: #a300a6;
+  }
+  .project-containerindex4 {
+    height: 700px;
+    max-width: 700px;
+    position: relative;
+    margin-left: 30px;
+    background-color: #ddb9dc;
+    display: flex; /* Använd flexbox */
+    flex-wrap: wrap;
+    border-top-left-radius: 400px; /* Minskad border radius */
+    border-top-right-radius: 400px; 
+    border-bottom-left-radius: 400px;
+    border-bottom-right-radius: 400px;/* Minskad border radius */
+    transition: transform 0.8s ease; /* Lägg till övergång för smidig förstoringsanimation */
+}
+.project-containerindex4:hover {
+    transform: scale(1.04); /* Förstora bilden med 10% när man hovrar över den */
+    animation: asymmetry 10s infinite;
+}
+
+.project-containerindex4 p {
+    padding: 50px;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 170px;
+    color: #000000;
+    font-family:'Courier New', Courier, monospace;
+}
+.project-containerindex5 {
+    padding: 80px;
+    display: flex; /* Använd flexbox */
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 100%;
+    z-index: 10;
+    background-color: #b7a3ce;
+    border-top-left-radius: 400px; /* Minskad border radius */
+    margin-top: -210px;
+    justify-content: center; /* Centrera horisontellt */
+    margin-bottom: 10px;
+}
+.pen {
+    height: 200px;
+    width: 200px;
+    z-index: 200;
+}
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.project-containerindex5 h1{
+    font-size: 36px;
+    color: #000000;                                            
+}
+.containeraboutme {
+    max-width: 80%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrera vertikalt */
+    font-size: 24px;
+    color: #000000;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.img2 {
+    padding-left: 20px;
+}
+.buttoncontact-link {
+    display: inline-block;
+    padding: 20px 30px;
+    text-align: center;
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.8s ease;
+    font-size: 20px;
+    font-weight: bold;
+}
+.buttoncontact-link:hover {
+    border-color: rgb(0, 0, 0);
+    background-color: #e8ceed;
+    color: rgb(0, 0, 0);
+}
+section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: left;
+    font-weight:lighter;
+  }
+  #portfolio1 {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+}
+  
+  .portfolioindex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .project-containerindex {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Anpassa efter behov */
+    margin: 20px;
+  }
+  
+  .projectindex {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .projectindex:hover {
+    transform: scale(1.05);
+  }
+  
+  .project1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.82);
+    backdrop-filter: blur(3px);
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 60px;
+  }
+  
+  .projectindex:hover .overlay {
+    height: 100%;
+  }
+  
+  .project-infoindex {
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .projectindex:hover .project-infoindex {
+    opacity: 1;
+  }
+  
+  .project-logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .section-container p {
+    margin: 10px 0;
+  }
+  
+  .buttonklarna-link {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+.buttonklarna-link {
+    display: inline-block;
+    padding: 5px 20px;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+#newside  {
+    font-style: italic;
+}
+.buttonklarna-link i {
+ font-size: 20px;
+}
+.buttonklarna-link:hover {
+    border-color: rgb(255, 255, 255);
+    background-color: #4089ab;
+    color: rgb(255, 255, 255);
+}
+
+.cl {
+width: 80%;
+margin: 30px auto; /* Centera elementet vertikalt och horisontellt */
+padding-bottom: 90px;
+}
+.clbild {
+max-width: 100%;
+}
+
+.klarna {
+width: 100%;
+margin: 0 auto;
+ }
+  /* CV sidan */ 
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;    
+  }
+  
+  .contact {
+    margin-top: 180px;
+  }
+  .education h3{
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+  }
+  .education h4 {
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: left;
+    font-weight: bolder;
+  }
+ 
+  .education-box {
+    position: relative;
+    color: #000000;
+    margin: 0 auto;
+    padding: 20px; /* Inre utfyllnad */
+    font-size: 20px;
+    height: 500px; /* Sätt höjden till 100% av förälderkontainerns höjd */
+    background-color: #e7f7ff;
+    border-radius: 20px;
+    overflow: hidden; /* Dölj eventuell overflow från det skuggade elementet */
+}
+  .experience h3{
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+  }
+  .experience h4{
+    color: #000000;
+    font-weight: bolder;
+  }
+
+  .experience-box {
+    position: relative;
+    color: #000000;
+    margin: 0 auto;
+    padding: 20px; /* Inre utfyllnad */
+    font-size: 20px;
+    height: 500px; /* Sätt höjden till 100% av förälderkontainerns höjd */
+    background-color: #e7f7ff;
+    border-radius: 20px;
+    overflow: hidden; /* Dölj eventuell overflow från det skuggade elementet */
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .education,
+  .experience {
+    width: 48%; /* Justera bredden efter behov */
+  }
+  /* Styla ikonerna */
+  .contact-box {
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 20px;
+    background-color:#e7f7ff; /* Ljusblå bakgrundsfärg */
+    display: flex;
+    flex-direction: column; /* Ändra flexriktningen till kolumn för att placera innehållet under varandra */
+    align-items: center;
+
+  }
+
+.contact ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; /* Ändra flexriktningen till kolumn för att placera innehållet under varandra */
+}
+  
+.contact ul li {
+    margin-bottom: 0; /* Ta bort det tidigare mellanrummet */
+    font-size: 20px; /* Justera ikonstorleken efter behov */
+    color: #000000; /* Justera ikonfärgen efter behov */
+    display: flex; /* Använd Flexbox */
+    align-items: center; /* Centrera vertikalt */
+}
+
+.contact ul li i  {
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 15px;
+    font-size: 24px;
+}
+.contact h3 {
+     font-size: 38px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+.contact a {
+    text-decoration: none;
+    color: #000000;
+}
+.contact a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+.skills h3 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+.skills-box {
+    font-size: 20px;
+    background-color:#e7f7ff;/* Ljusblå bakgrundsfärg */
+    border-radius: 20px; /* Avrundade hörn */
+    padding: 10px;
+    margin-bottom: 60px;
+    display: flex;
+    color: #000000;
+    align-items: center; /* Centrera elementen vertikalt */
+    justify-content: center; /* Centrera elementen horisontellt */
+    flex-wrap: wrap; /* Låt flexobjekten ombrytas vid behov */
+    justify-content: flex-start;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center; /* Centrera elementen vertikalt */
+}
+
+.skill-item  p {
+margin-left: 10px;
+margin-right: 30px;
+}
+.logo {
+    margin-left: 40px;
+    width: 40px; /* Justera logotypens storlek efter behov */
+    height: 40px;
+}
+.leaf {
+    height: 190px;
+    width: 290px;
+}
+ .footer {
+    margin-top: 90px;
+    background-color:#bdd9e8; 
+    padding: 20px; 
+    border-top: 2px solid rgb(255, 255, 255);
+    color: #000000; 
+    font-size: 24px;
+    display:flex;
+    flex-direction: column;
+ }
+  
+  
+  .footer ul {
+    font-size: 20px;
+    list-style-type: none; /* Tar bort punktlistestil */
+    padding: 0; /* Tar bort yttre padding från listan */
+    
+  }
+  
+  .footer li {
+    margin-bottom: 10px; /* Lägger till mellanrum mellan varje listelement */
+    display: inline-flex; /* Använd Flexbox */
+    align-items: center; /* Centrera vertikalt */
+  }
+  
+  .footer li a {
+    color: #000000; /* Textfärg vit */
+    text-decoration: none; /* Tar bort understrykning från länkar */
+  }
+  
+  .footer li a:hover {
+    text-decoration: underline; /* Lägger till understrykning när länken hovras över */
+  }
+  
+  .footer li i {
+    margin-left: 30px;
+    margin-right: 22px; /* Justera avståndet mellan ikonen och texten */
+    font-size: 28px; /* Justera ikonstorleken efter behov */
+    color: #000000; /* Justera ikonfärgen efter behov */
+  }
+  /* Media Query för mindre skärmar */
+@media screen and (max-width: 968px) {
+    .sidenav a {
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style: italic;
+        text-decoration: none;
+        padding: 10px;
+        color: #000000;
+    }
+    .nameimage {
+        margin-top: 150px;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .project-containerindex4 {
+        height: auto; /* Ändra höjden till auto för att innehållet ska anpassa sig */
+        max-width: 90%; /* Minska bredden för att undvika överlappning på mindre skärmar */
+        margin-left: auto; /* Centrera horisontellt genom att sätta margin-left och margin-right till auto */
+        margin-right: auto;
+        display: flex;
+        flex-direction: column; /* Ändra flexriktningen till kolumn för bättre anpassning */
+        align-items: center; /* Centrera innehållet vertikalt */
+        padding: 10px; /* Justera padding för bättre läsbarhet på mindre enheter */
+        border-radius: 20px; /* Minskad border-radius för en rundare form */
+    }
+    
+    .project-containerindex4 p {
+        padding: 20px; /* Justera padding för bättre läsbarhet på mindre enheter */
+        font-size: 16px; /* Minska fontstorleken för bättre läsbarhet på mindre enheter */
+        text-align: center;
+        margin-top: 20px; /* Minska avståndet från toppen för bättre layout på mindre enheter */
+        color: #000000;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .project-containerindex5 {
+    height: auto; /* Ändra höjden till auto för att innehållet ska anpassa sig */
+    max-width: 90%; /* Minska bredden för att undvika överlappning på mindre skärmar */
+    margin-left: auto; /* Centrera horisontellt genom att sätta margin-left och margin-right till auto */
+    margin-right: auto;
+    display: flex;
+    flex-direction: column; /* Ändra flexriktningen till kolumn för att placera innehållet under varandra */
+    align-items: center; /* Centrera innehållet vertikalt */
+    padding: 10px; /* Justera padding för bättre läsbarhet på mindre enheter */
+    border-radius: 20px; /* Minskad border-radius för en rundare form */
+    margin-top: 20px; /* Lägg till lite utrymme mellan de två behållarna */
+}
+.text-container {
+    font-size: 16px;
+    color: #000000;
+    margin: 0 auto;
+}
+
+.containeraboutme {
+    margin: 0 auto;
+    color: #000000;
+    align-items: center; /* Centrera vertikalt */
+    display: flex;
+    flex-direction: column;
+   max-width: none;
+}
+
+.img2 img {
+    max-width: 200px; /* Justera maxbredden för mindre skärmar */
+}
+
+    .buttoncontact-link {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        border: 2px solid rgb(0, 0, 0);
+        text-decoration: none;
+        border-radius: 50px;
+        transition: background-color 0.3s ease;
+        font-size: 16px;
+        font-weight: bold;
+        position: fied;
+    }
+    .buttoncontact-link:hover {
+        border-color: rgb(0, 0, 0);
+        background-color: #fefde3;
+        color: rgb(0, 0, 0);
+    }
+    .pen {
+        height: 100px;
+        width: 120px;
+    }
+    
+    .image-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    /* projekt index */
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .contact ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column; /* Ändra flexriktningen till kolumn för att placera innehållet under varandra */
+      }
+      .education,
+  .experience {
+    width: 100%; /* Justera bredden efter behov */
+  }
+  .education-box {
+    position: relative;
+    color: #000000;
+    margin: 0 auto;
+    padding: 20px; /* Inre utfyllnad */
+    font-size: 20px;
+    height: 100%; /* Sätt höjden till 100% av förälderkontainerns höjd */
+    border-radius: 20px;
+    overflow: hidden; /* Dölj eventuell overflow från det skuggade elementet */
+}
+  .experience h3{
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+  }
+  .experience h4{
+    color: #000000;
+  }
+
+  .experience-box {
+    position: relative;
+    color: #000000;
+    margin: 0 auto;
+    padding: 20px; /* Inre utfyllnad */
+    font-size: 20px;
+    height: 100%; /* Sätt höjden till 100% av förälderkontainerns höjd */
+    border-radius: 20px;
+    overflow: hidden; /* Dölj eventuell overflow från det skuggade elementet */
+}
+#portfolio1 {
+    font-size: 60px;
+  
+}
+}

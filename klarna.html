@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klarna UX Rapport</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      body {
+        background-color: #0b051d; /* Fallback-färg om linjär gradient inte stöds */
+        background-image: none;
+        font-family: Arial, sans-serif;
+        margin: 0 auto;
+        background-position: center; /* Centrera bakgrundsbilden */
+        background-attachment: fixed; /* Gör bakgrundsbilden fast */
+        max-width: 900px;
+        padding: 20px;
+      }
+      hr {
+        border: 1px solid black;
+        margin: 50px 0; /* Marginal över och under linjen */
+      }
+      #designthinking {
+          text-align: center;
+      }
+      .section-case {
+        margin-top: 30px;
+        background-color: #ffedf5;
+          padding: 40px;
+          border-radius: 15px;
+          margin-bottom: 30px;
+      }
+      .section-case1 {
+          background-color: #ffedf5;
+          border-radius: 15px;
+          display: flex; /* Använd flexbox för att ordna bilderna och texten horisontellt */
+          justify-content: center; /* Centrera innehållet horisontellt */
+          align-items: center; /* Centrera innehållet vertikalt */
+          flex-wrap: wrap; /* Tillåt innehållet att flöda över flera rader */
+      }
+      .section-case1 img{
+          display: flex; /* Använd flexbox för att ordna bilderna och texten horisontellt */
+          justify-content: center; /* Centrera innehållet horisontellt */
+          align-items: center; /* Centrera innehållet vertikalt */
+          flex-wrap: wrap; /* Tillåt innehållet att flöda över flera rader */
+          max-width: 600px; /* Ange en maxbredd för bilderna */
+      }
+      .content1 {
+        padding: 40px;
+      }
+      h1 {
+        color: #FFA8CD;
+      }
+      
+      h2 {
+        color: #000000;
+        font-size: 28px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+      .klarnalogo {
+        color: #000000;
+          display: flex; /* Använd flexbox för att placera element bredvid varandra */
+          flex-direction: column; /* Ställ in flexbox-layouten till att vara en kolumn */
+          align-items: center; /* Centrera innehållet horisontellt */
+          text-align: center; /* Centrera texten horisontellt */
+      }
+      .klarnalogo img {
+       width: 200px;
+       padding: 20px;
+      }
+      p, li {
+        font-size: 18px;
+      }
+      </style>
+</head>
+<body>
+  <section class="klarnalogo">
+    <img src="klarnalogo.png" alt="">
+    <h1>UX case study</h1>
+</section>
+    
+    <section class="section-case1">
+      <div class="content1">
+        <h2>Syfte</h2>
+        <p>Vi lever idag i ett digitaliserat samhälle där det mesta går att göra online. I samband med digitaliseringen och den rådande inflationen har det blivit allt svårare för företag att hålla fysiska butiker öppna men även för dess kunder att betala direkt. E-handeln har blomstrat till nya höjder på grund av dessa faktorer, och med detta har även innovativa betalningstjänster vuxit fram. En central aktör i denna utveckling är Klarna, en betaltjänst som likt Amex fått en ledande kraft inom den digitala handelsvärlden. Genom att erbjuda användarna en smidig och flexibel betalningsprocess har Klarna förenklat köpupplevelsen för kunder. I denna rapport utforskas och analyseras Klarna som en digital artefakt där dess funktioner granskas för att komma fram till huruvida användarvänliga dessa är.</p>
+      </div>
+        <div class="casebild1">
+          <img src="klarna3.png" >
+      </div>
+    </section>
+
+    <section class="section-case">
+        <h2>Problem</h2>
+        <p>Den digitala artefakt som valts för denna analys är betaltjänsten Klarna. Processen inleddes med att utforska Klarnas koncept och applikation med hjälp av en heuristisk utvärdering. En heuristisk utvärdering är en metod inom UX research där teamet granskar en produkt med hjälp av etablerade designprinciper och heuristiker för att identifiera potentiella problem och utmaningar.</p>
+        <p>Efter att ha utfört utvärderingen identifierades flera områden där Klarna kan förbättras för att skapa en bättre användarupplevelse. Dessa inkluderar bland annat en otydlig navigering, bristande informationsstruktur och långa laddningstider. För att adressera dessa problemområden genomfördes olika metoder för att samla in data och användarfeedback för att skapa lösningar som kan förbättra användarupplevelsen med Klarna.</p>
+    </section>
+    <section class="section-case">
+      <h2 id="designthinking">Design Thinking Process</h2>
+      <h3>Empathize <i class="fa-regular fa-heart"></i></h3>
+
+<h4>Recensioner Trustpilot Klarna</h4>
+
+<h4>Problem:</h4>
+
+<ul>
+    <li>Det är svårt att snabbt komma fram till alternativen för betalningen, och svårt att förstå hur man ska gå vidare. Krångligt och olika varje gång verkar det som. Jag fick klicka flera gånger fram och tillbaka för att kunna välja alternativet " på förfallodagen" t ex. Irriterande, man tror att det inte finns det alternativet längre.</li> 
+            <li>Klarna blir allt sämre. Ni svarar inte på mejl, ni betalar samma dag istället för sista betalningsdagen. Er sida blir allt svårare att tyda. Det måste till en kraftig skärpning från Klarnas sida. När får jag t ex svar på mitt mejl där jag frågar varför ni betalar direkt i s f sista förfallodagen????</li> 
+            <li>Processen för att välja specifika betalningsalternativ, som "på förfallodagen," är förvirrande och krånglig.</li>
+            <li>Det skall vara lättare att komma till mina sidor med fakturor mm. Nu är allt en anhopning med reklam för olika sidor. När jag går in på hemsidan vill jag lätt kunna hitta mina uppgifter. Det är nästan omöjligt nu. Och hade det inte varit för röran hade jag gett er en 5</li> 
+            <li>Ni har rört till en från början bra sida. Det går inte att tydligt hitta rätt. Svårt att hitta betalfunktionen. Oklart om betalningen är schemalagd eller betalas idag.</li>
+</ul>
+<h4>Baserat på denna user reasearch skapade vi intervju frågor för att ställa till användare för att bekräfta de problem vi hittills tagit del av.</h4>
+<h4>Intervjufrågor:</h4>
+
+<ol>
+    <li>Vilka funktioner använder du mest i Klarnas app?</li> 
+    <li>Vad ser du för fördelar med att använda Klarnas app jämfört med andra betalningsmetoder?</li> 
+    <li>Hur tycker du att Klarna kommunicerar information om dina kommande fakturor och förfallodagar? Vad skulle kunna förbättras?</li> 
+    <li>Använder du olika betalningsalternativ för olika typer av köp? Varför eller varför inte?</li>
+    <li>Finns det några situationer där du skulle vilja ändra ditt förfallodatum för betalningar? Hur lätt eller svårt är det att göra det i appen?</li>
+    <li>Finns det specifika funktioner eller förbättringar du önskar att Klarna skulle införa i framtiden?</li>
+</ol>
+<h4>Resultat:</h4>
+<ol>
+  <li>Majoriteten av användarna använder Klarnas app enbart för att betala fakturor eller dela upp betalningar, men navigationen dit anses vara svår och det är oklart om en faktura är betald eller inte. Användarna vet om att det finns en shoppingfunktion i appen men anser att den inte är relevant</li>
+  <br>
+  <li>De viktigaste fördelarna med att använda Klarnas app jämfört med andra betalningsmetoder enligt användarna är främst bekvämlighet och enkelhet. Användarna uttrycker att Klarna är det tryggaste betalalternativet.</li> 
+  <li>Kommunikationen om kommande fakturor och förfallodagar från Klarna anses vara okej av majoriteten av användarna, men det finns önskemål om en tydligare översikt över betalningsstatus för att underlätta att se vad som är betalat och inte.</li> 
+  <li>När det gäller användningen av olika betalningsalternativ använder majoriteten av användarna direktbetalning eller faktura beroende på förtroendet för hemsidan de köper ifrån. </li> 
+  <li>Flera användare uttrycker önskemål om att kunna ändra förfallodatum för betalningar, särskilt för att anpassa det till sin lönedag. Tyvärr anses denna funktion vara svår att navigera till och använda på grund av bristande information.</li> 
+  <li>När det gäller framtida förbättringar önskar majoriteten av användarna att Klarna fokuserar på att tydliggöra betalinformation och placera det på startsidan så att man enkelt får en översikt. Även tydliggöra hur man byter förfallodatum.</li>
+</ol>
+<hr>
+<h3>Define <i class="fa-solid fa-magnifying-glass"></i></h3>
+
+<h4>Målgrupp/Personas:</h4>
+<p> Intervjuerna visade på att samtliga användare shoppar relativt ofta online och är vana vid Klarnas applikation, samtliga användare önskade tydligare översikt över sina kommande fakturor, betalningar och historik samt enklare navigering genom appen och vissa användare ville ha en tydligare säkerhetsinformation. Dessa punkter sammanställdes och ligger som grund till de tre personorna som skapades. </p>
+<ol>
+  <li>Målgrupp 1: Unga studerande</li>
+  <p>Sara, 22 år, representerar unga studerande med begränsade ekonomiska resurser som föredrar bekväm online-shopping och olika betalningsalternativ. Sara vill ha tydligare översikt över sina fakturor på Klarna då hon har många, hon vill även få notiser när förfallodatumet börjar närma sig.</p>
+
+  <li>Målgrupp 2: Medelålders med etablerad familj</li>
+  <p>Kim, 55 år, representerar medelålders personer med stabila inkomster och familjeansvar. De föredrar att undvika att betala i förväg och är intresserade av betalningsalternativ som faktura för att smidigt kunna returnera produkter om familjen inte är nöjd. Kim tycker att Klarnas applikation är tydlig och han tycker att han ser sina fakturor tydligt, dock hade han önskat bättre navigering i applikationen.</p>
+
+  <li>Målgrupp 3: Arbetssökande och ekonomiskt medvetna</li>
+  <p>Isak, 35 år, representerar personer som är arbetssökande och medvetna om internetsäkerhet. Denna målgrupp är försiktig med sina inköp och föredrar betalningsalternativ som fakturor för att inte riskera att bli bedragen. Isak tycker att Klarna känns säkert men hade önskat fler säkra
+      betalningsalternativ.</p>
+
+</ol>
+<h4>User Stories:</h4>
+
+<ol>
+    <li>Som användare vill jag ha tydlig och begriplig information om eventuella avgifter och kostnader kopplade till mina fakturabetalningar.</li> 
+    <li>Som användare vill jag få notifikationer om förfallande betalningar och andra viktiga händelser relaterade till mina köp.</li> 
+    <li>Som användare vill jag kunna dela upp fakturor eller välja flexibla betalningsalternativ baserat på min ekonomiska situation.</li> 
+    <li>Som användare vill jag ha snabb och enkel åtkomst till en tydlig och detaljerad transaktionshistorik för att övervaka mina köp.</li> 
+    <li>Som användare vill jag kunna komma i kontakt med Klarnas kundsupport när jag behöver hjälp eller information.</li> 
+</ol>       
+<hr>
+<h3>Ideate <i class="fa-regular fa-lightbulb"></i></h3>
+<h4>Lösningar:</h4>
+
+        <ul>
+            <li>Förenkla betalningsgränssnittet och minska antalet klick som krävs för att göra en betalning.</li>
+            <li>Tydliggör betalningsalternativen, särskilt "på förfallodagen."</li>
+            <li>Tydligör chattfunktionen och kontaktinformation</li>
+            <li>Optimera webbplatsens struktur, flytta nuvarande startsida (shopping), betalinformation ska vara startsidan</li>
+            <li>Uppdatera och förenkla betalningsprocessen för att göra den mer användarvänlig och tydlig.</li>
+            <li>Återgå till grundprinciperna av enkelhet och användbarhet vid betalningar.</li>
+        </ul>
+        <hr>
+        <h3>Slutsats</h3>
+        <p>Genom att analysera och utvärdera Klarna som en digital artefakt har vi kunnat identifiera viktiga insikter och förbättringsmöjligheter för betaltjänsten. Baserat på data från enkäter, användarintervjuer, affinitetsdiagram, personas och användartester har vi föreslagit olika åtgärder för att förbättra användarupplevelsen med Klarna.</p>
+        <p>Det är tydligt att Klarna har potentialen att erbjuda en ännu bättre och mer användarvänlig betalningsupplevelse genom att adressera de identifierade problemområdena och genomföra de föreslagna förbättringarna. Genom att fortsätta att lyssna på användarna och iterera över designen kan Klarna fortsätta att vara en ledande aktör inom den digitala handelsvärlden och erbjuda en smidig och tillfredsställande köpupplevelse för sina användare.</p>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Klarna UX Rapport</p>
+    </footer>
+</body>
+</html>
